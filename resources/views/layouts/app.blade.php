@@ -3,17 +3,17 @@
 
 <head>
 
-  <!-- Meta data -->
-  <meta charset="UTF-8">
-  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
-  <meta content="Al-Quran Kareem"
-      name="description">
-  <meta content="Al-Quran Kareem" name="author">
-  <meta name="keywords"
-      content="Al-Quran Kareem" />
+    <!-- Meta data -->
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <meta content="Al-Quran Kareem"
+        name="description">
+    <meta content="Al-Quran Kareem" name="author">
+    <meta name="keywords"
+        content="Al-Quran Kareem" />
 
-  <!-- Title -->
-  <title>@yield('title')</title>
+    <!-- Title -->
+    <title>@yield('title')</title>
 
     <!--Favicon -->
     <link rel="icon" href="assets/images/brand/fav.png" type="image/x-icon" />
@@ -72,60 +72,60 @@
         <div class="page-main">
 
             <!--aside open-->
-           <!--aside open-->
-           <div class="app-sidebar app-sidebar2">
-            <div class="app-sidebar__logo">
-                <a class="header-brand" href="flow2-dashboard.html">
-                    <img src="assets/images/brand/logo.png" class="header-brand-img desktop-lgo"
-                        alt="Covido logo">
-                    <img src="assets/images/brand/logo1.png" class="header-brand-img dark-logo"
-                        alt="Covido logo">
-                    <img src="assets/images/brand/favicon.png" class="header-brand-img mobile-logo"
-                        alt="Covido logo">
-                    <img src="assets/images/brand/favicon1.png" class="header-brand-img darkmobile-logo"
-                        alt="Covido logo">
-                </a>
-            </div>
-        </div>
-        <aside class="app-sidebar app-sidebar3">
-            <div class="app-sidebar__user">
-                <div class="dropdown user-pro-body text-center">
-                    <div class="user-pic">
-                        <img src="{{ $user->img }}" alt="user-img"
-                            id="sidebarUserProfile" class="avatar-xl rounded-circle mb-1" style="border: 2px solid white;">
-                    </div>
-                    <div class="user-info">
-                        <h5 class=" mb-1 font-weight-bold" id="sidebarUsername">{{ $user->fname ." ".$user->lname }}</h5>
-                        <span class="text-muted app-sidebar__user-name text-sm">Admin</span>
-                    </div>
+            <!--aside open-->
+            <div class="app-sidebar app-sidebar2">
+                <div class="app-sidebar__logo">
+                    <a class="header-brand" href="/dashboard">
+                        <img src="assets/images/brand/logo.png" class="header-brand-img desktop-lgo"
+                            alt="Covido logo">
+                        <img src="assets/images/brand/logo1.png" class="header-brand-img dark-logo"
+                            alt="Covido logo">
+                        <img src="assets/images/brand/favicon.png" class="header-brand-img mobile-logo"
+                            alt="Covido logo">
+                        <img src="assets/images/brand/favicon1.png" class="header-brand-img darkmobile-logo"
+                            alt="Covido logo">
+                    </a>
                 </div>
             </div>
-            <ul class="side-menu">
-                <li class="slide">
-                    <a class="side-menu__item{{ Request::is('dashboard') ? ' active' : ''}}" href="/dashboard">
+            <aside class="app-sidebar app-sidebar3">
+                <div class="app-sidebar__user">
+                    <div class="dropdown user-pro-body text-center">
+                        <div class="user-pic">
+                            <img src="{{ $user->img }}" alt="user-img"
+                                id="sidebarUserProfile" class="avatar-xl rounded-circle mb-1" style="border: 2px solid white;">
+                        </div>
+                        <div class="user-info">
+                            <h5 class=" mb-1 font-weight-bold" id="sidebarUsername">{{ $user->fname ." ".$user->lname }}</h5>
+                            <span class="text-muted app-sidebar__user-name text-sm">Admin</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="side-menu">
+                    <li class="slide">
+                        <a class="side-menu__item{{ Request::is('dashboard') ? ' active' : ''}}" href="/dashboard">
 
 
-                        <svg class="side-menu__icon" id="category-2" xmlns="http://www.w3.org/2000/svg"
-                            width="18.18" height="18.18" viewBox="0 0 18.18 18.18">
-                            <path id="Vector"
-                                d="M3.962,0H2.522A2.254,2.254,0,0,0,0,2.522V3.962A2.254,2.254,0,0,0,2.522,6.484H3.962A2.254,2.254,0,0,0,6.484,3.962V2.522A2.254,2.254,0,0,0,3.962,0Z"
-                                transform="translate(10.181 1.515)" fill="#bf8d46" />
-                            <path id="Vector-2" data-name="Vector"
-                                d="M3.969,0H2.53A2.257,2.257,0,0,0,0,2.522V3.962a2.257,2.257,0,0,0,2.522,2.53H3.962A2.254,2.254,0,0,0,6.484,3.969V2.53A2.248,2.248,0,0,0,3.969,0Z"
-                                transform="translate(1.515 10.173)" fill="#bf8d46" />
-                            <path id="Vector-3" data-name="Vector"
-                                d="M6.5,3.25A3.25,3.25,0,1,1,3.25,0,3.25,3.25,0,0,1,6.5,3.25Z"
-                                transform="translate(1.515 1.515)" fill="#bf8d46" />
-                            <path id="Vector-4" data-name="Vector"
-                                d="M6.5,3.25A3.25,3.25,0,1,1,3.25,0,3.25,3.25,0,0,1,6.5,3.25Z"
-                                transform="translate(10.165 10.165)" fill="#bf8d46" />
-                            <path id="Vector-5" data-name="Vector" d="M0,0H18.18V18.18H0Z"
-                                transform="translate(18.18 18.18) rotate(180)" fill="none" opacity="0" />
-                        </svg>
+                            <svg class="side-menu__icon" id="category-2" xmlns="http://www.w3.org/2000/svg"
+                                width="18.18" height="18.18" viewBox="0 0 18.18 18.18">
+                                <path id="Vector"
+                                    d="M3.962,0H2.522A2.254,2.254,0,0,0,0,2.522V3.962A2.254,2.254,0,0,0,2.522,6.484H3.962A2.254,2.254,0,0,0,6.484,3.962V2.522A2.254,2.254,0,0,0,3.962,0Z"
+                                    transform="translate(10.181 1.515)" fill="#bf8d46" />
+                                <path id="Vector-2" data-name="Vector"
+                                    d="M3.969,0H2.53A2.257,2.257,0,0,0,0,2.522V3.962a2.257,2.257,0,0,0,2.522,2.53H3.962A2.254,2.254,0,0,0,6.484,3.969V2.53A2.248,2.248,0,0,0,3.969,0Z"
+                                    transform="translate(1.515 10.173)" fill="#bf8d46" />
+                                <path id="Vector-3" data-name="Vector"
+                                    d="M6.5,3.25A3.25,3.25,0,1,1,3.25,0,3.25,3.25,0,0,1,6.5,3.25Z"
+                                    transform="translate(1.515 1.515)" fill="#bf8d46" />
+                                <path id="Vector-4" data-name="Vector"
+                                    d="M6.5,3.25A3.25,3.25,0,1,1,3.25,0,3.25,3.25,0,0,1,6.5,3.25Z"
+                                    transform="translate(10.165 10.165)" fill="#bf8d46" />
+                                <path id="Vector-5" data-name="Vector" d="M0,0H18.18V18.18H0Z"
+                                    transform="translate(18.18 18.18) rotate(180)" fill="none" opacity="0" />
+                            </svg>
 
-                        <span class="side-menu__label">Dashboard</span></a>
-                </li>
-                <!-- <li class="slide">
+                            <span class="side-menu__label">Dashboard</span></a>
+                    </li>
+                    <!-- <li class="slide">
                     <a class="side-menu__item" href="/flow2-qari-panel.html">
 
                         <svg class="side-menu__icon" id="Group_15880" data-name="Group 15880"
@@ -154,178 +154,178 @@
                         <span class="side-menu__label">Qari Panel</span></a>
                 </li> -->
 
-                <li class="slide">
-                    <a class="side-menu__item{{ Request::is('azkar') ? ' active' : ''}}" href="/azkar">
+                    <li class="slide">
+                        <a class="side-menu__item{{ Request::is('azkar') ? ' active' : ''}}" href="/azkar">
 
 
 
-                        <svg class="side-menu__icon" id="vuesax_bold_message-text"
-                            data-name="vuesax/bold/message-text" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <g id="message-text">
-                                <path id="Vector" d="M24,0V24H0V0Z" fill="#bf8d46" opacity="0" />
-                                <path id="Vector-2" data-name="Vector"
-                                    d="M14,20H1a1,1,0,0,1-1-1V6A6.139,6.139,0,0,1,1.5,1.5,6.139,6.139,0,0,1,6,0h8a6.138,6.138,0,0,1,4.5,1.5A6.14,6.14,0,0,1,20,6v8a6.138,6.138,0,0,1-1.5,4.5A6.138,6.138,0,0,1,14,20ZM5,11.75a.751.751,0,0,0-.751.75A.76.76,0,0,0,5,13.25h7a.76.76,0,0,0,.751-.75A.751.751,0,0,0,12,11.75Zm0-5a.76.76,0,0,0-.751.75A.751.751,0,0,0,5,8.25H15a.75.75,0,0,0,0-1.5Z"
-                                    transform="translate(2 2)" fill="#bf8d46" />
-                            </g>
-                        </svg>
-
-
-
-                        <span class="side-menu__label">Azkar Panel</span></a>
-                </li>
-
-                <li class="slide">
-                    <a class="side-menu__item{{ Request::is('app-users') ? ' active' : ''}}" href="/app-users">
-                        <svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" width="22.676"
-                            height="22.675" viewBox="0 0 22.676 22.675">
-                            <g id="vuesax_bold_people" data-name="vuesax/bold/people"
-                                transform="translate(-620 -252)">
-                                <g id="people" transform="translate(620 252)">
-                                    <path id="Vector" d="M0,0H22.675V22.675H0Z" fill="none" opacity="0" />
+                            <svg class="side-menu__icon" id="vuesax_bold_message-text"
+                                data-name="vuesax/bold/message-text" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24">
+                                <g id="message-text">
+                                    <path id="Vector" d="M24,0V24H0V0Z" fill="#bf8d46" opacity="0" />
                                     <path id="Vector-2" data-name="Vector"
-                                        d="M2.825,5.452a.7.7,0,0,0-.2,0,2.735,2.735,0,1,1,.2,0Z"
-                                        transform="translate(13.737 1.89)" fill="#bf8d46" />
-                                    <path id="Vector-3" data-name="Vector"
-                                        d="M3.959,4.434a5.867,5.867,0,0,1-3.911.794A6.17,6.17,0,0,0,.6,2.686,5.805,5.805,0,0,0,0,.059,5.893,5.893,0,0,1,3.949.843,2,2,0,0,1,3.959,4.434Z"
-                                        transform="translate(15.684 9.455)" fill="#bf8d46" />
-                                    <path id="Vector-4" data-name="Vector"
-                                        d="M2.627,5.452a.7.7,0,0,1,.2,0,2.726,2.726,0,1,0-.2,0Z"
-                                        transform="translate(3.458 1.89)" fill="#bf8d46" />
-                                    <path id="Vector-5" data-name="Vector"
-                                        d="M4.3,2.686a6.153,6.153,0,0,0,.557,2.57A5.838,5.838,0,0,1,1.12,4.443a2.007,2.007,0,0,1,0-3.6A5.8,5.8,0,0,1,4.9.04,6.007,6.007,0,0,0,4.3,2.686Z"
-                                        transform="translate(1.885 9.455)" fill="#bf8d46" />
-                                    <path id="Vector-6" data-name="Vector"
-                                        d="M3.373,6.491a1.067,1.067,0,0,0-.246,0,3.26,3.26,0,1,1,.246,0Z"
-                                        transform="translate(8.078 8.503)" fill="#bf8d46" />
-                                    <path id="Vector-7" data-name="Vector"
-                                        d="M1.07.815a1.94,1.94,0,0,0,0,3.467,5.773,5.773,0,0,0,5.914,0,1.94,1.94,0,0,0,0-3.467A5.773,5.773,0,0,0,1.07.815Z"
-                                        transform="translate(7.31 16.135)" fill="#bf8d46" />
+                                        d="M14,20H1a1,1,0,0,1-1-1V6A6.139,6.139,0,0,1,1.5,1.5,6.139,6.139,0,0,1,6,0h8a6.138,6.138,0,0,1,4.5,1.5A6.14,6.14,0,0,1,20,6v8a6.138,6.138,0,0,1-1.5,4.5A6.138,6.138,0,0,1,14,20ZM5,11.75a.751.751,0,0,0-.751.75A.76.76,0,0,0,5,13.25h7a.76.76,0,0,0,.751-.75A.751.751,0,0,0,12,11.75Zm0-5a.76.76,0,0,0-.751.75A.751.751,0,0,0,5,8.25H15a.75.75,0,0,0,0-1.5Z"
+                                        transform="translate(2 2)" fill="#bf8d46" />
                                 </g>
-                            </g>
-                        </svg>
-                        <span class="side-menu__label">App User</span></a>
-                </li>
-                <li class="slide">
-                    <a class="side-menu__item{{ Request::is('settings') ? ' active' : ''}}" href="/settings">
-                        <svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" width="21.707"
-                            height="21.707" viewBox="0 0 21.707 21.707">
-                            <g id="vuesax_bold_setting-2" data-name="vuesax/bold/setting-2"
-                                transform="translate(-300 -190)">
-                                <g id="setting-2" transform="translate(300 190)">
-                                    <path id="Vector"
-                                        d="M16.371,6.023c-1.637,0-2.306-1.158-1.492-2.578A1.715,1.715,0,0,0,14.245,1.1l-1.565-.9A1.51,1.51,0,0,0,10.618.75l-.1.172c-.814,1.42-2.153,1.42-2.976,0L7.444.75A1.484,1.484,0,0,0,5.4.207l-1.565.9A1.726,1.726,0,0,0,3.2,3.454c.823,1.411.154,2.569-1.483,2.569A1.724,1.724,0,0,0,0,7.741V9.333a1.724,1.724,0,0,0,1.718,1.718c1.637,0,2.306,1.158,1.483,2.578a1.715,1.715,0,0,0,.633,2.343l1.565.9a1.51,1.51,0,0,0,2.062-.543l.1-.172c.814-1.42,2.153-1.42,2.976,0l.1.172a1.51,1.51,0,0,0,2.062.543l1.565-.9a1.718,1.718,0,0,0,.633-2.343c-.823-1.42-.154-2.578,1.483-2.578A1.724,1.724,0,0,0,18.1,9.333V7.741A1.737,1.737,0,0,0,16.371,6.023ZM9.045,11.477a2.939,2.939,0,1,1,2.939-2.939A2.945,2.945,0,0,1,9.045,11.477Z"
-                                        transform="translate(1.809 2.316)" fill="#bf8d46" />
-                                    <path id="Vector-2" data-name="Vector" d="M0,0H21.707V21.707H0Z"
-                                        transform="translate(21.707 21.707) rotate(180)" fill="none" opacity="0" />
+                            </svg>
+
+
+
+                            <span class="side-menu__label">Azkar Panel</span></a>
+                    </li>
+
+                    <li class="slide">
+                        <a class="side-menu__item{{ Request::is('app-users') ? ' active' : ''}}" href="/app-users">
+                            <svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" width="22.676"
+                                height="22.675" viewBox="0 0 22.676 22.675">
+                                <g id="vuesax_bold_people" data-name="vuesax/bold/people"
+                                    transform="translate(-620 -252)">
+                                    <g id="people" transform="translate(620 252)">
+                                        <path id="Vector" d="M0,0H22.675V22.675H0Z" fill="none" opacity="0" />
+                                        <path id="Vector-2" data-name="Vector"
+                                            d="M2.825,5.452a.7.7,0,0,0-.2,0,2.735,2.735,0,1,1,.2,0Z"
+                                            transform="translate(13.737 1.89)" fill="#bf8d46" />
+                                        <path id="Vector-3" data-name="Vector"
+                                            d="M3.959,4.434a5.867,5.867,0,0,1-3.911.794A6.17,6.17,0,0,0,.6,2.686,5.805,5.805,0,0,0,0,.059,5.893,5.893,0,0,1,3.949.843,2,2,0,0,1,3.959,4.434Z"
+                                            transform="translate(15.684 9.455)" fill="#bf8d46" />
+                                        <path id="Vector-4" data-name="Vector"
+                                            d="M2.627,5.452a.7.7,0,0,1,.2,0,2.726,2.726,0,1,0-.2,0Z"
+                                            transform="translate(3.458 1.89)" fill="#bf8d46" />
+                                        <path id="Vector-5" data-name="Vector"
+                                            d="M4.3,2.686a6.153,6.153,0,0,0,.557,2.57A5.838,5.838,0,0,1,1.12,4.443a2.007,2.007,0,0,1,0-3.6A5.8,5.8,0,0,1,4.9.04,6.007,6.007,0,0,0,4.3,2.686Z"
+                                            transform="translate(1.885 9.455)" fill="#bf8d46" />
+                                        <path id="Vector-6" data-name="Vector"
+                                            d="M3.373,6.491a1.067,1.067,0,0,0-.246,0,3.26,3.26,0,1,1,.246,0Z"
+                                            transform="translate(8.078 8.503)" fill="#bf8d46" />
+                                        <path id="Vector-7" data-name="Vector"
+                                            d="M1.07.815a1.94,1.94,0,0,0,0,3.467,5.773,5.773,0,0,0,5.914,0,1.94,1.94,0,0,0,0-3.467A5.773,5.773,0,0,0,1.07.815Z"
+                                            transform="translate(7.31 16.135)" fill="#bf8d46" />
+                                    </g>
                                 </g>
-                            </g>
-                        </svg>
-                        <span class="side-menu__label">Settings</span></a>
-                </li>
-                <li class="slide">
-                    <a class="side-menu__item" href="/logout">
-                        <svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                            viewBox="0 0 20 20">
-                            <g id="vuesax_bold_arrow-square-left" data-name="vuesax/bold/arrow-square-left"
-                                transform="translate(-492 -188)">
-                                <g id="arrow-square-left" transform="translate(492 188)">
-                                    <path id="Vector"
-                                        d="M11.825,0H4.842A4.447,4.447,0,0,0,0,4.842v6.975a4.45,4.45,0,0,0,4.842,4.85h6.975a4.447,4.447,0,0,0,4.842-4.842V4.842A4.437,4.437,0,0,0,11.825,0Zm-2,10.833a.629.629,0,0,1,0,.883.624.624,0,0,1-.883,0L6,8.775a.629.629,0,0,1,0-.883L8.942,4.95a.625.625,0,1,1,.883.883l-2.5,2.5Z"
-                                        transform="translate(1.667 1.667)" fill="#bf8d46" />
-                                    <path id="Vector-2" data-name="Vector" d="M0,0H20V20H0Z"
-                                        transform="translate(20 20) rotate(180)" fill="none" opacity="0" />
+                            </svg>
+                            <span class="side-menu__label">App User</span></a>
+                    </li>
+                    <li class="slide">
+                        <a class="side-menu__item{{ Request::is('settings') ? ' active' : ''}}" href="/settings">
+                            <svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" width="21.707"
+                                height="21.707" viewBox="0 0 21.707 21.707">
+                                <g id="vuesax_bold_setting-2" data-name="vuesax/bold/setting-2"
+                                    transform="translate(-300 -190)">
+                                    <g id="setting-2" transform="translate(300 190)">
+                                        <path id="Vector"
+                                            d="M16.371,6.023c-1.637,0-2.306-1.158-1.492-2.578A1.715,1.715,0,0,0,14.245,1.1l-1.565-.9A1.51,1.51,0,0,0,10.618.75l-.1.172c-.814,1.42-2.153,1.42-2.976,0L7.444.75A1.484,1.484,0,0,0,5.4.207l-1.565.9A1.726,1.726,0,0,0,3.2,3.454c.823,1.411.154,2.569-1.483,2.569A1.724,1.724,0,0,0,0,7.741V9.333a1.724,1.724,0,0,0,1.718,1.718c1.637,0,2.306,1.158,1.483,2.578a1.715,1.715,0,0,0,.633,2.343l1.565.9a1.51,1.51,0,0,0,2.062-.543l.1-.172c.814-1.42,2.153-1.42,2.976,0l.1.172a1.51,1.51,0,0,0,2.062.543l1.565-.9a1.718,1.718,0,0,0,.633-2.343c-.823-1.42-.154-2.578,1.483-2.578A1.724,1.724,0,0,0,18.1,9.333V7.741A1.737,1.737,0,0,0,16.371,6.023ZM9.045,11.477a2.939,2.939,0,1,1,2.939-2.939A2.945,2.945,0,0,1,9.045,11.477Z"
+                                            transform="translate(1.809 2.316)" fill="#bf8d46" />
+                                        <path id="Vector-2" data-name="Vector" d="M0,0H21.707V21.707H0Z"
+                                            transform="translate(21.707 21.707) rotate(180)" fill="none" opacity="0" />
+                                    </g>
                                 </g>
-                            </g>
-                        </svg>
+                            </svg>
+                            <span class="side-menu__label">Settings</span></a>
+                    </li>
+                    <li class="slide">
+                        <a class="side-menu__item" href="/logout">
+                            <svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 20 20">
+                                <g id="vuesax_bold_arrow-square-left" data-name="vuesax/bold/arrow-square-left"
+                                    transform="translate(-492 -188)">
+                                    <g id="arrow-square-left" transform="translate(492 188)">
+                                        <path id="Vector"
+                                            d="M11.825,0H4.842A4.447,4.447,0,0,0,0,4.842v6.975a4.45,4.45,0,0,0,4.842,4.85h6.975a4.447,4.447,0,0,0,4.842-4.842V4.842A4.437,4.437,0,0,0,11.825,0Zm-2,10.833a.629.629,0,0,1,0,.883.624.624,0,0,1-.883,0L6,8.775a.629.629,0,0,1,0-.883L8.942,4.95a.625.625,0,1,1,.883.883l-2.5,2.5Z"
+                                            transform="translate(1.667 1.667)" fill="#bf8d46" />
+                                        <path id="Vector-2" data-name="Vector" d="M0,0H20V20H0Z"
+                                            transform="translate(20 20) rotate(180)" fill="none" opacity="0" />
+                                    </g>
+                                </g>
+                            </svg>
 
-                        <span class="side-menu__label">Log Out</span></a>
-                </li>
+                            <span class="side-menu__label">Log Out</span></a>
+                    </li>
 
-            </ul>
+                </ul>
 
-        </aside>
-        <!--aside closed-->
+            </aside>
+            <!--aside closed-->
 
-        <div class="app-content main-content">
-            <div class="side-app">
+            <div class="app-content main-content">
+                <div class="side-app">
 
-                <!--app header-->
-                <div class="app-header header top-header">
-                    <div class="container-fluid">
-                        <div class="d-flex">
-                            <a class="header-brand" href="index.html">
-                                <img src="assets/images/brand/logo.png" class="header-brand-img desktop-lgo"
-                                    alt="Dashtic logo">
-                                <img src="assets/images/brand/logo1.png" class="header-brand-img dark-logo"
-                                    alt="Dashtic logo">
-                                <img src="assets/images/brand/favicon.png"
-                                    class="header-brand-img mobile-logo" alt="Dashtic logo">
-                                <img src="assets/images/brand/favicon1.png"
-                                    class="header-brand-img darkmobile-logo" alt="Dashtic logo">
-                            </a>
-                            <div class="dropdown side-nav">
-                                <div class="app-sidebar__toggle" data-toggle="sidebar">
-                                    <a class="open-toggle" href="#">
-                                        <svg class="header-icon mt-1" xmlns="http://www.w3.org/2000/svg" width="24"
-                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <line x1="3" y1="12" x2="21" y2="12"></line>
-                                            <line x1="3" y1="6" x2="21" y2="6"></line>
-                                            <line x1="3" y1="18" x2="21" y2="18"></line>
-                                        </svg>
-                                    </a>
-                                    <a class="close-toggle" href="#">
-                                        <svg class="header-icon mt-1" xmlns="http://www.w3.org/2000/svg" height="24"
-                                            viewBox="0 0 24 24" width="24">
+                    <!--app header-->
+                    <div class="app-header header top-header">
+                        <div class="container-fluid">
+                            <div class="d-flex">
+                                <a class="header-brand" href="/dashboard">
+                                    <img src="assets/images/brand/logo.png" class="header-brand-img desktop-lgo"
+                                        alt="Dashtic logo">
+                                    <img src="assets/images/brand/logo1.png" class="header-brand-img dark-logo"
+                                        alt="Dashtic logo">
+                                    <img src="assets/images/brand/favicon.png"
+                                        class="header-brand-img mobile-logo" alt="Dashtic logo">
+                                    <img src="assets/images/brand/favicon1.png"
+                                        class="header-brand-img darkmobile-logo" alt="Dashtic logo">
+                                </a>
+                                <div class="dropdown side-nav">
+                                    <div class="app-sidebar__toggle" data-toggle="sidebar">
+                                        <a class="open-toggle" href="#">
+                                            <svg class="header-icon mt-1" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                                            </svg>
+                                        </a>
+                                        <a class="close-toggle" href="#">
+                                            <svg class="header-icon mt-1" xmlns="http://www.w3.org/2000/svg" height="24"
+                                                viewBox="0 0 24 24" width="24">
+                                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                                <path
+                                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mx-auto" style="width: 100%;">
+                                    <a href="#" data-toggle="search" class="nav-link nav-link-lg d-md-none navsearch ">
+                                        <svg class="header-icon search-icon" x="1008" y="1248" viewBox="0 0 24 24"
+                                            height="100%" width="100%" preserveAspectRatio="xMidYMid meet"
+                                            focusable="false">
                                             <path d="M0 0h24v24H0V0z" fill="none" />
                                             <path
-                                                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                                                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
                                         </svg>
                                     </a>
+                                    <div class="mt-1 mx-auto    ">
+                                        <form class="form-inline" method="GET" action="/app-users">
+                                            <div class="search-element">
+                                                <input type="search" name="q" class="form-control header-search"
+                                                    placeholder="Search…" aria-label="Search" tabindex="1" value="{{ old('q', request()->query('q')) }}">
+                                                <button class="btn btn-primary-color" type="submit">
+                                                    <svg class="header-icon search-icon" x="1008" y="1248"
+                                                        viewBox="0 0 24 24" height="100%" width="100%"
+                                                        preserveAspectRatio="xMidYMid meet" focusable="false">
+                                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                                        <path
+                                                            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div><!-- SEARCH -->
+
                                 </div>
-                            </div>
-
-                            <div class="d-flex mx-auto" style="width: 100%;">
-                                <a href="#" data-toggle="search" class="nav-link nav-link-lg d-md-none navsearch ">
-                                    <svg class="header-icon search-icon" x="1008" y="1248" viewBox="0 0 24 24"
-                                        height="100%" width="100%" preserveAspectRatio="xMidYMid meet"
-                                        focusable="false">
-                                        <path d="M0 0h24v24H0V0z" fill="none" />
-                                        <path
-                                            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-                                    </svg>
-                                </a>
-                                <div class="mt-1 mx-auto    ">
-                                    <form class="form-inline" method="GET" action="/app-users">
-                                        <div class="search-element">
-                                            <input type="search" name="q" class="form-control header-search"
-                                                placeholder="Search…" aria-label="Search" tabindex="1" value="{{ old('q', request()->query('q')) }}">
-                                            <button class="btn btn-primary-color" type="submit">
-                                                <svg class="header-icon search-icon" x="1008" y="1248"
-                                                    viewBox="0 0 24 24" height="100%" width="100%"
-                                                    preserveAspectRatio="xMidYMid meet" focusable="false">
-                                                    <path d="M0 0h24v24H0V0z" fill="none" />
-                                                    <path
-                                                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div><!-- SEARCH -->
-
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--/app header-->
+                    <!--/app header-->
 
 
 
                     <!-- main content -->
                     @yield('content')
 
-                    
+
 
                     <!--End row-->
 

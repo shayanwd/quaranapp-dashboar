@@ -11,6 +11,32 @@
   border-bottom: 0;
   border-radius: 0; }
 
+  .login-social-icons{
+    gap:15px;
+    display: flex;
+    padding-left: 15px;
+
+
+
+  }
+  .login-social-icons a{
+color:#7f7f7f;
+  }
+
+  .input-group{
+    position: relative;
+  }
+  .invalid-feedback {
+    font-size: 10px;
+    padding: 0px 05px 5px 5px;
+
+}
+
+  .copyright-text{
+    padding-right: 10px;
+    color:#7f7f7f;
+  }
+
 .accordion .card:not(:first-of-type) .card-header:first-child {
   border-radius: 0; }
 
