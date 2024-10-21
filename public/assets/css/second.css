@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+b,
+th,
+td,
+li,
+input,
+textarea {
+    color: #ECDFC9;
+}
+
+.input-group {
+    min-height: 57px;
+    border: 1px solid #ecdfc978 !important;
+}
+
+.input-group .input-group-addon {
+    padding-right: 0px;
+}
+
+.main-content {
+    background-image: url(../images/bgg.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto;
+    background-color: #2A2A2A;
+}
+
+
+
+
+
+
+.prof-details .btn-primary {
+    padding: 12px 24px;
+    color: #ECDFC9;
+    border-radius: 7px !important;
+}
+
+.prof-details .row:has(>.btn-primary) {
+    align-items: center;
+}
+
+
+.page-header {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.page-header h4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0.4px;
+    color: #ECDFC9;
+}
+
+.page-rightheader .date-range-btn {
+    padding: 10px 20px;
+    padding-left: 40px;
+    background: transparent;
+    border: 1px solid #ecdfc982;
+    border-radius: 8px;
+}
+
+.page-rightheader .date-range-btn i {
+    font-size: 7px;
+    color: #BF8D46;
+    opacity: 1;
+    transform: translate(10px, 0px);
+}
+
+.page-rightheader .date-range-btn svg {
+    top: 0px !important;
+    bottom: 0 !important;
+    margin: auto;
+}
+
+.page-rightheader .date-range-btn span {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+.card {
+    border: 1px solid hsl(37.71deg 47.95% 85.69% / 20%);
+    box-shadow: 0px 3px 6px hsl(0deg 0% 0% / 16%);
+    background: hsl(0deg 0% 0% / 16%);
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+}
+
+
+
+.app-content .side-app {
+    padding: 27px 35px;
+}
+
+.app-content .side-app .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+.setting-box .card-body {
+    padding-top: 47px;
+    padding-bottom: 55px;
+}
+
+.set-card-ico img {
+    width: 85px;
+    height: 97px;
+    display: block;
+    object-fit: contain;
+    margin: 0 auto 21px;
+}
+
+.setting-box h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: #ECDFC9;
+}
+
+
+
+
+
+
+
+
+.prof-details {
+    padding: 35px 25px 52px 60px;
+}
+
+.pfp-box img {
+    width: 160px;
+    height: 160px;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 40px;
+    aspect-ratio: 1 / 1;
+}
+
+.btn-white:not(.date-range-btn) {
+    background: transparent;
+    border: 1px solid #ECDFC9;
+    border-radius: 7px;
+    padding: 15px 30px;
+    width: 100%;
+    max-width: 188px;
+    margin: 0 auto;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #BF8D46;
+    line-height: 21px;
+}
+
+.pfp-box {
+    padding: 20px 0px;
+    padding-right: 35px;
+    border-right: 1px solid #ecdfc978;
+}
+
+.pfp-dets {
+    width: 100%;
+    padding-left: 30px;
+}
+
+.pfp-dets {
+    display: grid;
+    gap: 44px;
+    width: 100%;
+}
+
+.pfp-dets h2 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0.8px;
+    margin-bottom: 0px;
+}
+
+.pfp-dets .row .row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.trop-cell .card-body {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    text-align: center;
+}
+
+.trop-cell .set-card-ico img {
+    margin-bottom: 12px;
+}
+
+.trop-cell p {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    margin: 0;
+}
+
+.trop-cell span {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.trop-card {
+    background-image: url(../images/trop-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+}
+
+
+.trop-card .card-body {
+    padding-top: 17px;
+    padding-bottom: 34px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.trop-card .trop-card-cntnt {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+}
+
+.trop-card .trop-card-cntnt h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #fff;
+    letter-spacing: 0.4px;
+}
+
+.trop-card .trop-card-cntnt b {
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+    font-weight: 600;
+    color: #fff;
+}
+
+.trop-card .trop-card-cntnt span {
+    display: block;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.trop-card .trop-card-cntnt p {
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+    font-weight: 600;
+    color: #fff;
+    margin: 18px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-header {
+    padding: 20px 20px;
+    border-bottom: 1px solid #ecdfc93d;
+}
+
+/* TABLE STYLING */
+.card:has(.table-responsive) .card-header {
+    padding: 20px 35px;
+    border-bottom: 1px solid #ecdfc93d;
+}
+
+.card-header h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.card:has(.table-responsive) {
+    position: relative;
+}
+
+.card:has(.table-responsive) .dataTables_length {
+    display: none;
+}
+
+.card:has(.table-responsive) .dataTables_filter {
+    padding-top: 5px;
+    padding-bottom: 6px;
+    padding-right: 35px;
+}
+
+.card:has(.table-responsive) .table-responsive {
+    margin-top: -80px;
+}
+
+.card-body:has(.table-responsive) {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.card:has(.table-responsive) .table-responsive table {
+    border: 0;
+}
+
+.card:has(.table-responsive) .table-responsive table th {
+    border: 0 !important;
+    border-bottom: 1px solid #ecdfc93d !important;
+    padding: 22px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #ECDFC9;
+}
+
+.card:has(.table-responsive) .table-responsive table td {
+    border: 0 !important;
+    border-bottom: 1px solid #ecdfc93d !important;
+    vertical-align: middle;
+    padding: 12px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #ECDFC9;
+}
+
+.card:has(.table-responsive) .table-responsive table td:first-child,
+.card:has(.table-responsive) .table-responsive table th:first-child {
+    padding-left: 35px;
+}
+
+.card:has(.table-responsive) .table-responsive table td:last-child,
+.card:has(.table-responsive) .table-responsive table th:last-child {
+    padding-right: 50px;
+    width: 60px !important;
+}
+
+.card:has(.table-responsive) .table-responsive table th::before,
+.card:has(.table-responsive) .table-responsive table th::after {
+    display: none;
+}
+
+.card:has(.table-responsive) .table-responsive table .btn {
+    padding: 6px 18px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+}
+
+.btn-success {
+    background: #D2F7DD !important;
+    border-color: #D2F7DD !important;
+    color: #1FA806 !important;
+    box-shadow: none !important;
+}
+
+.card:has(.table-responsive) .table-responsive table td:last-child button {
+    background: none !important;
+    border: none;
+    padding: 0px !important;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.card:has(.table-responsive) .dataTables_filter label {
+    width: 100%;
+}
+
+.card:has(.table-responsive) .dataTables_filter label input {
+    width: 100%;
+    margin-left: auto;
+    max-width: 200px;
+    display: block;
+    background: transparent;
+    padding: 10px 20px !important;
+    border: 1px solid hsl(37.71deg 47.95% 85.69% / 20%);
+    border-radius: 8px;
+    min-height: 35px;
+    font-size: 12px;
+    line-height: 16px !important;
+    color: #ECDFC9;
+}
+
+.card:has(.table-responsive) .dataTables_filter label input::placeholder {
+    color: #ECDFC9 !important;
+}
+
+.table-responsive .row:has(>div>.dataTables_paginate) {
+    padding: 20px 52px 0px 35px;
+}
+
+.table-responsive .row:has(>div>.dataTables_paginate) .dataTables_info {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #ffffff;
+}
+
+.table-responsive .row:has(>div>.dataTables_paginate) .pagination {
+    margin: 0;
+}
+
+.table-responsive .row:has(>div>.dataTables_paginate) .pagination .previous a {
+    border: 1px solid #ecdfc93d;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px 16px;
+    padding-left: 20px;
+    font-size: 12px;
+}
+
+.table-responsive .row:has(>div>.dataTables_paginate) .pagination .next a {
+    border: 1px solid #ecdfc93d;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 16px;
+    padding-right: 20px;
+}
+
+.table-responsive .row:has(>div>.dataTables_paginate) .pagination :is(li, a) {
+    background: transparent !important;
+    font-size: 12px;
+    border-color: #ecdfc93d;
+    color: #ffffff;
+}
+
+.table-responsive .row:has(>div>.dataTables_paginate) .pagination li a {
+    padding: 10px 16px;
+    border-right: 0;
+}
+
+.table-responsive .row:has(>div>.dataTables_paginate) .pagination li.active a {
+    border-color: #BF8D46 !important;
+    background: #BF8D46 !important;
+}
+
+/* TABLE STYLING end */
+
+
+
+
+
+
+
+.gr-height {
+    display: grid;
+    margin-bottom: 8px;
+    gap: 20px;
+}
+
+.gr-height .trop-cell {
+    height: 100%;
+}
+
+.gr-height .trop-cell .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.qari-table .table .btn {
+    margin: 0 auto;
+    display: block;
+}
+
+.btn-light {
+    background: #AEAEAE !important;
+    border-color: #AEAEAE !important;
+    color: #000000 !important;
+}
+
+.custom-switch-indicator {
+    border: 1px solid #ecdfc966;
+    margin: 0 auto !important;
+    background: transparent;
+}
+
+.custom-switch {
+    width: 100%;
+}
+
+.custom-switch-input:checked~.custom-switch-indicator {
+    background: #ECDFC9 !important;
+}
+
+.custom-switch-indicator::before {
+    transition: all 0.3s;
+    background: #BF8D46;
+    box-shadow: none !important;
+}
+
+.qari-list .card-list {
+    width: 100%;
+}
+
+.qari-list .card-list>div {
+    padding: 15px 25px;
+    gap: 14px;
+    border-bottom: 1px solid #ecdfc93d;
+}
+
+.qari-list .card-list>div:last-child {
+    border: none;
+}
+
+.qari-list .card-list .avatar {
+    height: 32px;
+    width: 32px;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover !important;
+}
+
+.qari-list .card-list h6 {
+    font-weight: 500;
+    font-size: 12px;
+    color: #ffffff;
+    letter-spacing: 0.2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MODAL CSS */
+.modal-content {
+    background: #262626;
+    border: none;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 45px;
+    max-width: 414px;
+    margin: auto;
+}
+
+.modal-content :is(.modal-body, .modal-footer) {
+    padding: 0;
+    border: none;
+}
+
+.input-group textarea {
+    background: transparent !important;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color: #ECDFC9 !important;
+    font-weight: bold;
+    padding-top: 10px;
+    height: 164px;
+    resize: none;
+}
+
+.input-group textarea::placeholder {
+    color: #ECDFC9 !important;
+}
+
+.modal-body h6 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.modal-content :is(input, textarea),
+.modal-content :is(input, textarea)::placeholder {
+    font-size: 14px !important;
+    letter-spacing: 0.5px;
+}
+
+.time-select {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    margin-top: 17px;
+}
+
+.time-select>span {
+    font-size: 14px !important;
+    font-weight: 700;
+    line-height: 19px;
+    color: #ECDFC9;
+    letter-spacing: 0.4px;
+}
+
+.ts-pills {
+    display: flex;
+    gap: 19px;
+}
+
+.custom-radio {
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.custom-radio .custom-control-label {
+    margin: 0;
+    display: block;
+    padding: 5px 15px 6px;
+    border: 1px solid #ecdfc97d;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #ecdfc9;
+}
+
+.custom-radio .custom-control-label::before,
+.custom-radio .custom-control-label::after {
+    display: none;
+}
+
+.custom-radio:has(input:checked) .custom-control-label {
+    background: #F7F19E;
+    border-color: #F7F19E;
+    color: #BFBB46;
+}
+
+.modal-footer button {
+    flex: 1;
+}
+
+.modal-footer .btn {
+    padding: 17px 17px 18px;
+    border-radius: 10px;
+    background: #BF8D46 !important;
+    border-color: #BF8D46 !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 21px !important;
+    color: #ECDFC9 !important;
+    letter-spacing: 0.5px !important;
+}
+
+.modal-footer .btn.btn-light {
+    background: #ECDFC9 !important;
+    border-color: #ECDFC9 !important;
+    color: #BF8D46 !important;
+}
+
+.modal-content .modal-footer {
+    gap: 5px;
+}
+
+/* MODAL CSS end */

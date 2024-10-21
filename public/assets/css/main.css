@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    font-family: "Outfit", sans-serif !important;
+}
+body{
+      font-family: "Outfit", sans-serif !important;
+}
+
+.input-group-addon {
+background-color: transparent !important;
+border: none !important;
+
+}
+
+.login-title{
+    font-size: 24px;
+    font-weight: bold !important;
+    color: #ECDFC9;
+    margin-top: 50px;
+}
+
+.input-group{
+border-radius: 10px;
+border: 1px solid #ECDFC9 !important;    
+}
+.input-group input{
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    font-size: 12px !important;
+    color: #ECDFC9 !important;
+    font-weight: bold !important;
+}
+.input-group input::placeholder{
+    font-size: 12px !important;
+    color: #ECDFC9 !important;
+}
+.input-group-addon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary{
+    background-color: #BF8D46 !important;
+    border: 1px solid transparent !important;
+    outline: none;
+    border-radius: 10px !important;
+}
+.btn-primary:hover{
+    background-color: transparent !important;
+    border: 1px solid #BF8D46 !important;
+}
+
+
+.page-style1.page-style2{
+    background-color: #262626 !important;
+}
+.page-style2.page-style1:before{
+    display: none;
+}
+.bg-style:before {
+background-image: url('/assets/images/login-bg.png' ) !important;
+}
+
+.forgot-btn{
+    color:#ECDFC9 !important;
+    text-decoration: underline;
+    font-size: 12px !important;
+    font-weight: bold !important;
+}
+
+.header.top-header{
+    background-color: #262626 !important;
+    box-shadow: none !important;
+}
+
+.header-search{
+    border-radius: 6px !important;
+    background-color: transparent !important;
+    border: 0.5px solid #4D4B46 !important;
+}
+.header .form-inline .btn{
+    right: inherit !important;
+    left: 20px !important;
+    margin-left: 0 !important;
+    padding: 0 !important;
+    top: 11px;
+}
+.header .form-inline .btn svg.header-icon {
+    width: 19px;
+    color: white !important;
+    fill: white !important;
+}
+.header .form-inline .form-control {
+    border: 1px solid none;
+    padding-left: 50px !important;
+    width: 500px;
+    padding-right: 10px !important;
+    padding-top: 7px;
+    background: transparent;
+}
+.app-sidebar__toggle svg.header-icon{
+    width: 25px !important;
+    border-radius: 8px;
+    height: 25px !important;
+    background-color: #ECDFC9 !important;
+    padding: 4px;
+    /* fill: white !important; */
+    color: #BF8D46 !important;
+}
+#daterange-btn{
+    border-radius: 8px !important;
+    border: 1px solid #ECDFC9 !important;
+    background-color: transparent !important;
+    color: #ECDFC9 !important;
+    font-size:12px ;
+}
+#daterange-btn .header-icon2{
+    color: #BF8D46 !important;
+    fill: #BF8D46 !important;
+}
+.app-sidebar{
+    background-color: #262626 !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+.app-sidebar__user, .app-sidebar__logo{
+    border: none !important;
+}
+
+.side-menu{
+    padding-left: 0;
+    padding-right: 0;
+}
+.side-menu__item{
+    padding: 16px 15px;
+    gap: 10px;
+}
+.side-menu__item svg{
+    margin: 0 !important;
+  
+}
+.side-menu__item span{
+  line-height: 100%;
+  
+}
+.side-menu__item.active{
+    background-color: #BF8D46;
+    color: white !important;
+    border-radius: 0 !important;
+}
+.side-menu__item.active svg{
+filter: brightness(100);
+}
+.daterangepicker{
+    background-color: #212121 !important;
+}
+
+.daterangepicker .calendar-table{
+    border-color: #212121 !important;
+    background-color: #262626 !important;
+}
+.off.available{
+    background-color: #ffffff14 !important;
+}
+td span.morning{
+    background-color: #F7F19E !important;
+    color: #BFBB46 !important;
+    font-size: 13px !important;
+    border-radius: 25px !important;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 8px 25px !important;
+}
+td span.evening{
+    background-color: #ECDFC9 !important;
+    color: #BF8D46 !important;
+    font-size: 13px !important;
+    border-radius: 25px !important;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 8px 25px !important;
+}
+.svg-icon, .header-icon, .header-icon2 {
+    color: #BF8D46;
+    fill: #BF8D46;
+}
+
+.input-group{
+    align-items: center;
+}
+.app-content .side-app {
+    padding: 27px 5px !important;
+}
+.header.top-header .search-element input{
+    color: white !important;
+}
+
+
+.add-btn{
+
+    box-shadow: 0px 7px 14px 0px #bf8d46b0;
+}
+
+.side-menu__item.active span{
+
+    color: white !important;
+}
+.side-menu__item.active:hover span{
+
+    color: white !important;
+}
+
+#back-to-top{
+    background-color: white !important;
+}
+
+@media only screen and (max-width: 600px) {
+ 
+  
+.card:has(.table-responsive) .table-responsive {
+    margin-top: -20px !important;
+}
+.card:has(.table-responsive) .dataTables_filter label input{
+    max-width: 100% !important;
+}
+.header .form-inline .btn {
+    right: inherit !important;
+    left: 20px !important;
+    margin-left: 0 !important;
+    padding: 0 !important;
+    top: 31px !important;
+    width: fit-content !important;
+}
+.app-sidebar__toggle{
+    margin: 0 !important;
+}
+.prof-details {
+    padding: 15px 5px 15px 5px !important;
+}
+.pfp-box {
+    padding:  0px !important;
+    padding-right: 35px;
+    border-bottom: 1px solid #ecdfc978 !important;
+    border-right: 1px solid transparent !important;
+    margin-bottom: 20px !important;
+    padding-bottom: 20px !important;
+}
+.pfp-box img {
+    width: 130px !important;
+    height: 130px !important;
+    margin: 0 auto 20px !important;
+}
+
+.pfp-dets h2 {
+    font-size: 20px !important;
+}
+.pfp-dets {
+ 
+    padding-left: 0px !important;
+}
+.pfp-dets h2 {
+    padding-left: 10px !important;
+}
+.prof-details .btn-primary {
+    margin-right: 10px !important;
+}
+.setting-box .card-body {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+.set-card-ico img {
+    width: 35px !important;
+    height: 47px !important;
+    margin: 0 auto 15px !important;
+}
+.trop-card {
+  
+    background-size: cover !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-color: #bf8d46;
+}
+.trop-cell span {
+    font-size: 31px !important;
+    line-height: 40px !important;
+    font-weight: 500 ;
+    letter-spacing: 1px;
+}
+.trop-card .trop-card-cntnt {
+  
+    max-width: 100% !important;
+}
+.modal-content {
+   
+    padding: 10px !important;
+
+}
+
+
+
+
+
+}
