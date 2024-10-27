@@ -45,7 +45,8 @@
             <div class="modal-body" style="    padding: 10px;
     background: #ffffff17; border-radius:8px;">
                 <div class="form-group">
-                    <p id="azkarDeleteModal_title" style="color:white;"></p>
+                    <h4 style="font-size: 16px;">Are you sure you want to delete this azkar?</h4>
+                    <p id="azkarDeleteModal_title" style="color:white; background-color: #3e4347; padding: 10px; border-radius: 5px; font-size: 20px;"></p>
                 </div>
 
 

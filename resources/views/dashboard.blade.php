@@ -11,11 +11,14 @@
 <!--End Page header-->
 
 <!--Row-->
+
 <div class="modal fade" id="userDetailsModal" tabindex="-1" role="dialog"
     aria-labelledby="userDetailsModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content bg-dark text-light">
-            <div class="modal-header border-secondary">
+        <div class="modal-content bg-dark text-light" style="padding: 10px;">
+            <div class="modal-header" style="border: none;
+    padding: 0;
+    margin-bottom: 20px;">
                 <h5 class="modal-title text-light" id="userDetailsModalLabel">User Details</h5>
                 <button type="button" class="close text-light" data-dismiss="modal"
                     aria-label="Close">
@@ -23,28 +26,28 @@
                 </button>
             </div>
 
-            <div class="modal-body">
-                <div class="form-group">
+            <div class="modal-body" style="    padding: 10px;
+    background: #ffffff17; border-radius:8px;">
+                <div class="form-group" style="margin-bottom: 0px;">
                     <label for="userName" id="appUserModelName" class="text-light">Name</label>
                     <p id="userName" class="text-secondary"></p>
                 </div>
-                <div class="form-group">
+                <div class="form-group" style="margin-bottom: 0px;">
                     <label for="userEmail" id="appUserModelEmail" class="text-light">Email</label>
                     <p id="userEmail" class="text-secondary"></p>
                 </div>
-                <div class="form-group">
-                    <label for="userPhone" id="appUserModelPhone" class="text-light">Phone</label>
-                    <p id="userPhone" class="text-secondary">+</p>
+                <div class="form-group" style="margin-bottom: 0px;">
+                    <label for="userPhone" id="appUserModelPhone" class="text-light mb-0">Phone</label>
                 </div>
-            </div>
-
-            <div class="modal-footer border-secondary">
-                <button type="button" class="btn btn-outline-light"
-                    data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
 </div>
+
+
+
+
+
 <div class="row gutters-sm">
     <div class="col-xl-6 col-lg-6 col-md-12">
         <div class="card setting-box trop-card">
