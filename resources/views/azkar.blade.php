@@ -20,11 +20,17 @@
 <!--End Page header-->
 
 <!--Row-->
+
+
+
+
 <div class="modal fade" id="azkarDeleteModal" tabindex="-1" role="dialog"
     aria-labelledby="azkarDeleteModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content bg-dark text-light">
-            <div class="modal-header border-secondary">
+        <div class="modal-content bg-dark text-light" style="padding: 10px;">
+            <div class="modal-header" style="border: none;
+    padding: 0;
+    margin-bottom: 20px;">
                 <h5 class="modal-title text-light" id="userDetailsModalLabel">Delete Azkar</h5>
                 <button type="button" class="close text-light" data-dismiss="modal"
                     aria-label="Close">
@@ -32,9 +38,14 @@
                 </button>
             </div>
 
-            <div class="modal-body">
+
+
+
+
+            <div class="modal-body" style="    padding: 10px;
+    background: #ffffff17; border-radius:8px;">
                 <div class="form-group">
-                    <p id="azkarDeleteModal_title" class="text-secondary"></p>
+                    <p id="azkarDeleteModal_title" style="color:white;"></p>
                 </div>
 
 
@@ -46,6 +57,20 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

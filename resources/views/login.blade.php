@@ -140,29 +140,31 @@
 									<a href="forgot-password.html" class="forgot-btn btn btn-link box-shadow-0 px-0">Forgot
 										password?</a>
 								</div> -->
-								<div class="d-flex justify-content-between align-items-center mt-3 justify-content-between" style="width: 100%; position: absolute; bottom: -100px; ">
-									<div class="login-social-icons">
-										<a href="#" class="me-2">
-											<i class="ri-facebook-fill"></i>
-										</a>
-										<a href="#" class="me-2">
-											<i class="ri-twitter-fill"></i>
-										</a>
-										<a href="#">
-											<i class="ri-instagram-fill"></i>
-										</a>
-										<a href="#">
-											<i class="ri-linkedin-fill"></i>
-										</a>
-									</div>
-									<div>
-										<p class="mb-0 copyright-text">© 2024 Quran Al Kareem</p>
-									</div>
-								</div>
+
 							</div>
+
 
 						</div>
 					</form>
+					<div class="d-flex justify-content-between align-items-center mt-3 justify-content-between" style="width: 100%; position: absolute; bottom: -100px; max-width: 500px; margin: 0 auto; left: 0; right: 0; ">
+						<div class="login-social-icons">
+							<a href="#" class="me-2">
+								<i class="ri-facebook-fill"></i>
+							</a>
+							<a href="#" class="me-2">
+								<i class="ri-twitter-fill"></i>
+							</a>
+							<a href="#">
+								<i class="ri-instagram-fill"></i>
+							</a>
+							<a href="#">
+								<i class="ri-linkedin-fill"></i>
+							</a>
+						</div>
+						<div>
+							<p class="mb-0 copyright-text">© 2024 Quran Al Kareem</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

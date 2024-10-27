@@ -18,24 +18,25 @@ use Illuminate\Support\Facades\File;
 class AuthController extends Controller
 {
 
-    public function uploadImage(Request $request) {
+    public function uploadImage(Request $request)
+    {
         $validator = Validator::make($request->all(), [
             'img' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
-    
+
         if ($validator->fails()) {
             return response()->json($validator->errors(), 422);
         }
-    
+
         // Store the image temporarily
         $tempPath = $request->file('img')->store('temp', 'public');
-    
+
         // Return the temporary path
         return response()->json(['tempPath' => $tempPath], 201);
     }
-    
+
     // Register a new user
-    
+
     public function register(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -45,11 +46,11 @@ class AuthController extends Controller
             'email' => 'required|email|unique:users',
             'password' => 'required|min:6|confirmed',
         ]);
-    
+
         if ($validator->fails()) {
             return response()->json($validator->errors(), 422);
         }
-        
+
         $otp = rand(1000, 9999);
         $otp_expires_at = Carbon::now()->addHour();
         $request->img = $request->img ? $request->img : '';
@@ -65,15 +66,15 @@ class AuthController extends Controller
             'role' => 'user',  // Default role is 'user'
             'status' => 1, // Default status is 'on'
         ]);
-    
+
         Mail::raw("Your OTP is: $otp", function ($message) use ($user) {
             $message->to($user->email)->subject('Your OTP Code');
         });
-    
+
         // Return user object after registration
         return response()->json(['message' => 'User registered successfully. OTP sent to your email.', 'user' => $user], 201);
     }
-    
+
 
 
 
@@ -107,7 +108,8 @@ class AuthController extends Controller
     }
 
     // Login
-    public function resendOTP(Request $request){
+    public function resendOTP(Request $request)
+    {
         $validator = Validator::make($request->all(), [
             'email' => 'required|email',
         ]);
@@ -127,33 +129,33 @@ class AuthController extends Controller
         Mail::raw("Your OTP is: $otp", function ($message) use ($user) {
             $message->to($user->email)->subject('Your OTP Code');
         });
-        
+
         $user->otp = $otp;
         $user->otp_expires_at = $otp_expires_at;
         $user->save();
         $user->refresh();
-        
+
         //is this line okay adn will work?
         return response()->json(['message' => 'New OTP Sent!', 'user' => $user], 200);
     }
-    
+
     public function login(Request $request)
     {
         // Fetch the user by email
         $user = User::where('email', $request->email)->first();
-    
+
         // Check if the user exists and if the password is correct
         if (!$user || !Hash::check($request->password, $user->password)) {
             return response()->json(['message' => 'Invalid credentials'], 401);
         }
-    
+
         // Check if OTP is required (not null)
         if ($user->otp !== null) {
             $response = $this->resendOTP($request);
             $responseData = json_decode($response->getContent(), true);
             return response()->json(['message' => 'OTP required for verification', 'user' => $responseData['user']], 200);
         }
-    
+
         // If OTP is null, proceed with login and generate a token (JWT, Passport, etc.)
         // For now, we are simply returning a login successful message.
         return response()->json(['message' => 'Login successful', 'user' => $user], 200);
@@ -328,7 +330,7 @@ class AuthController extends Controller
 
         // Update other fields
         $user->update($request->only('fname', 'lname', 'phone', 'email', 'img'));
-        
+
         // Reload the user to get the updated data
         $user->refresh();
 
@@ -370,7 +372,7 @@ class AuthController extends Controller
         // Send the OTP to the user's email
         Mail::raw("Your OTP is: {$otp}", function ($message) use ($user) {
             $message->to($user->email)
-                    ->subject('Your OTP for Email Retrieval');
+                ->subject('Your OTP for Email Retrieval');
         });
 
         //overwriting otp by assigning new one and not from the users' table column
@@ -440,7 +442,7 @@ class AuthController extends Controller
 
         // Verify the token directly with Laravel's password broker
         $status = Password::broker()->reset(
-            $request->only('email', 'password', 'password_confirmation', 'token'), 
+            $request->only('email', 'password', 'password_confirmation', 'token'),
             function ($user, $password) {
                 $user->password = Hash::make($password);
                 $user->save();
@@ -453,7 +455,4 @@ class AuthController extends Controller
 
         return response()->json(['message' => 'Invalid token or email'], 400);
     }
-
-
-
 }

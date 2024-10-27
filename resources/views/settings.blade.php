@@ -389,10 +389,18 @@
             isValid &= validateField(fields.phone, /^\+?[0-9]{10,14}$/, 'Please enter a valid phone number.');
             isValid &= validateField(fields.email, /^[^\s@]+@[^\s@]+\.[^\s@]+$/, 'Please enter a valid email address.');
 
-            if (fields.oldPassword.value || fields.newPassword.value || fields.confirmNewPassword.value) {
+            if (fields.oldPassword.value) {
                 isValid &= validateField(fields.oldPassword, /.{8,}/, 'Old password must be at least 8 characters long.');
                 isValid &= validateField(fields.newPassword, /.{8,}/, 'New password must be at least 8 characters long.');
                 isValid &= validateField(fields.confirmNewPassword, new RegExp(`^${fields.newPassword.value}$`), 'Passwords do not match.');
+            } else {
+                // Remove validation from password fields if old password is empty
+                [fields.oldPassword, fields.newPassword, fields.confirmNewPassword].forEach(field => {
+                    field.classList.remove('is-invalid');
+                    if (field.nextElementSibling && field.nextElementSibling.classList.contains('invalid-feedback')) {
+                        field.nextElementSibling.remove();
+                    }
+                });
             }
 
             saveBtn.classList.toggle('disabled', !isValid);
