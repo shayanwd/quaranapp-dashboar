@@ -46,6 +46,9 @@ body {
     align-items: center;
     justify-content: center;
 }
+.close span{
+    color: #ff4f45 !important;
+}
 
 .btn-primary {
     background-color: #BF8D46 !important;
